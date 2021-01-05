@@ -122,7 +122,7 @@ int CompoundExp::eval(EvalState & state) {
    }
    int left = lhs->eval(state);
    int right = rhs->eval(state);
-   if (op == "+") return left + right;
+   if (op == "+") return left + right; //sss
    if (op == "-") return left - right;
    if (op == "*") return left * right;
    if (op == "/")
